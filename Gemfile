@@ -62,6 +62,7 @@ end
 
 group :test do
   gem 'rake', '~> 12.3', '>= 12.3.1'
+  gem 'rspec-rails', '~> 3.8', '>= 3.8.1'
 end 
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
