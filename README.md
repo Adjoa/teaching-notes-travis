@@ -1,5 +1,5 @@
-# Teaching Notes 2
-
+# Teaching Notes
+[![Build Status](https://travis-ci.org/Adjoa/teaching-notes-travis.svg?branch=master)](https://travis-ci.org/Adjoa/teaching-notes-travis)
 A student management tool for music teachers built with Ruby on Rails[v 5.1.5].
 
 ## Installation
