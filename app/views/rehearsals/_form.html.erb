@@ -1,0 +1,22 @@
+<%= render "shared/error_messages", :target => rehearsal %>
+
+<div class="card w-75 mx-auto">
+  <div class="card-body">
+    <%= form_for @rehearsal do |f| %>
+      <div class="form-group row">
+      <%= f.label "Rehearsal for" %>
+      <%= f.collection_select :event_id, @events, :id, :name, :with_css_classes => "form-control" %>
+      </div>
+      <div class="form-group row col-md-8">
+      <%= f.label :venue %>
+      <%= f.text_field :venue, class: "form-control" %>
+      </div>
+      <div class="form-group row col-md-8">
+      <%= f.label :time %>
+      <%= f.datetime_select(:time, default: Date.today, ampm: true, class: "form-control" ) %>
+      </div>
+      <%= link_to "Cancel", rehearsals_path, class: "btn btn-sm btn-secondary" %>
+      <%= f.submit %>
+    <% end %>
+  </div>
+</div>

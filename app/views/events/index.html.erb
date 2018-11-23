@@ -1,0 +1,16 @@
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col"><strong>Time</strong></th>  
+      <th scope="col"><strong>Name</strong></th>  
+      <th scope="col"><strong>Venue</strong></th>
+      <th scope="col"><strong>Rehearsals</strong></th>
+      <th scope="col">
+        <strong>
+          <%= link_to "Add Event", new_event_path, class: "btn btn-sm btn-primary" %>
+        </strong>
+      </th> 
+    </tr>
+  </thead>
+  <%= render @events %>
+</table>

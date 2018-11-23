@@ -1,0 +1,63 @@
+<fieldset>
+<legend><h2>Student Info</h2></legend>
+  <table>
+    <tr>
+      <td><strong>Name</strong></td>
+      <td><%= @student.name %></td>
+    </tr>
+    <tr>
+      <td><strong>Email</strong></td>
+      <td><%= @student.email %></td>
+    </tr>
+  </table>
+</fieldset>
+<strong>
+  <%= link_to "Back", students_path, class: "btn btn-sm btn-secondary" %>
+</strong>
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#entries" role="tab" aria-controls="home" aria-selected="true">Entries</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#rehearsals" role="tab" aria-controls="profile" aria-selected="false">Rehearsals</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="comments-tab" data-toggle="tab" href="#comments" role="tab" aria-controls="profile" aria-selected="false">Comments</a>
+  </li>
+</ul>
+
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="entries" role="tabpanel" aria-labelledby="entries-tab">
+   <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+       <%= link_to "Add New Entry", new_student_entry_path(@student, @entry), class: "btn btn-sm btn-primary" %>
+      </li>
+      <%= render @student.entries %>
+    </ul> 
+  </div>
+  
+  <div class="tab-pane fade" id="rehearsals" role="tabpanel" aria-labelledby="rehearsals-tab">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><%= link_to "Add New Rehearsal", rehearsals_path, class: "btn btn-sm btn-primary" %></li>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col"><strong>Time</strong></th>  
+            <th scope="col"><strong>Rehearsal</strong></th>  
+            <th scope="col"><strong>Venue</strong></th>
+          </tr>
+        </thead>
+        <%= render @student.rehearsals_attending %>
+      </table>
+    </ul> 
+  </div>
+  
+   <div class="tab-pane fade" id="comments" role="tabpanel" aria-labelledby="comments-tab">
+    <ul class="list-group list-group-flush">
+    <% @student.comments.each do |comment| %>
+      <p>Commented on rehearsal for <%= comment.rehearsal.event.name %> saying: <%= comment.content %></p>
+    <% end %>
+    </ul> 
+  </div>
+</div>

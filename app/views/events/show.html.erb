@@ -1,0 +1,15 @@
+<%= javascript_include_tag 'application', params[:controller], 'data-turbolinks-track': 'reload' %>
+<div class="card w-50 mx-auto">
+  <div class="card-body">
+    <h5 class="card-title"><%= @event.name %></h5>
+    <p class="card-text"><%= @event.time.strftime("%B %-d, %Y") %> at <%= @event.time.strftime("%k:%M")%></p>
+    <p class="card-text"><%= @event.venue %></p>
+    <%= link_to "Back", events_path(@event), class: "btn btn-sm btn-secondary" %>
+    <%= link_to "Edit", edit_event_path(@event), class: "btn btn-sm btn-primary" %>
+  </div>
+</div>
+
+<%= link_to "Load Rehearsals", event_rehearsals_path(@event, :json), id: "load_rehearsals" %>
+<table id="rehearsals" class="table table-hover">
+  <tbody></tbody>
+</table>
