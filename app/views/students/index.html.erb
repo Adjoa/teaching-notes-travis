@@ -14,7 +14,7 @@
     </tr>
   </thead>
   <tbody>
-    <%= render @students %>
+    <%= render(:partial => 'student', :collection => @students) || 'No records' %>
     <tr id="tr-load-more">
       <td>
         <%= link_to "Load More", more_students_path(:json), id: "load-more", class: "btn btn-sm btn-primary" %>
