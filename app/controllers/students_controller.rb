@@ -17,9 +17,9 @@ class StudentsController < ApplicationController
     @student = current_user.students.build(student_params)
     if @student.save 
       # respond_to do |format|
-        # format.html { render 'show.html', :layout => false }
+      #   format.html { render 'show.html', :layout => false }
       # end
-      render json: @student
+      redirect_to student_path(@student)
     else
       render :new
     end
