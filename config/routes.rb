@@ -10,8 +10,6 @@ Rails.application.routes.draw do
    get '/entries/:id/entry_data', :to => 'entries#entry_data'
   end
   
-  get '/more_students', :to => 'students#more'
-  
   resources :rehearsals
   
   resources :events do

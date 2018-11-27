@@ -2,12 +2,7 @@ class StudentsController < ApplicationController
   before_action :set_student, only: [:show, :edit, :update, :destroy]
   
   def index
-    @students = current_user.students.first
-  end
-  
-  def more
-    @students = current_user.students.where('id > ?', params[:id]).limit(2)
-    render json: @students
+    @students = current_user.students
   end
   
   def show
