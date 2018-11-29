@@ -17,8 +17,8 @@ To take this application for a test drive, run the following from the command-li
 Then navigate to the IP address displayed.
 
 ## How to Use
-Once you've got the app set up, you can create an account or log in as one of the pre-existing users. Each of these users already has some student records associated with their account.
-Password: 'password'
+Once you've got the app set up, you can create an account or log in as one of the pre-existing users. Each of these users already has some student records associated with their account.\
+Password: 'password'\
 Email:
 - peter.tosh@email.com
 - dawnsings@email.com
