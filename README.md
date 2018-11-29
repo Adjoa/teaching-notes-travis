@@ -27,10 +27,10 @@ Email:
 There are 3 tabs: Students, Events, and Rehearsals. 
 
 ### To create a student record
-Select the 'Students' tab.
-Click 'Add Student' in the top-right corner of the students table.
-Fill in all the form fields.
-Click 'Create Student'.
+Select the 'Students' tab.\
+Click 'Add Student' in the top-right corner of the students table.\
+Fill in all the form fields.\
+Click 'Create Student'.\
 This action will take you to the student's profile page, titled 'Student Info'.
 
 ### To create a student log entry
@@ -41,29 +41,29 @@ Under the 'Entries' tab, click 'Add New Entry'.\
 Fill in all the form fields.\
 Click 'Create Entry'.\
 This action will take you back to the student's profile page.\
-The created entry will be listed under the 'Entries' tab.\
+The created entry will be listed under the 'Entries' tab.
 
 ### To create an event
-Select the 'Events' tab.
-Click 'Add Event' in the top-right corner of the events table.
-Fill in the form fields.
-Click 'Create Event'.
+Select the 'Events' tab.\
+Click 'Add Event' in the top-right corner of the events table.\
+Fill in the form fields.\
+Click 'Create Event'.\
 This action will take you to the event page.
 
 ### To create a rehearsal
-Rehearsals can only be created for existing events.
-Select the 'Rehearsals' tab.
-Click 'Add Rehearsal' in the top-right corner of the rehearsals table.
-Select an event from the drop-down menu.
-Fill in the form fields.
-Click 'Create Rehearsal'.
+Rehearsals can only be created for existing events.\
+Select the 'Rehearsals' tab.\
+Click 'Add Rehearsal' in the top-right corner of the rehearsals table.\
+Select an event from the drop-down menu.\
+Fill in the form fields.\
+Click 'Create Rehearsal'.\
 This action will take you to the rehearsal page.
 
-### To add a student to a rehearsal
-Select the 'Rehearsals' tab. 
-Select a rehearsal from the list by clicking the associated event's name.
-Note: This list is also accessible from a student's page by clicking 'Add New Rehearsal' under the 'Rehearsals' tab.
-The rehearsal page lists all the students associated with the account. 
+### To add/remove a student to a rehearsal
+Select the 'Rehearsals' tab.\
+Select a rehearsal from the list by clicking the associated event's name.\
+Note: This list is also accessible from a student's page by clicking 'Add New Rehearsal' under the 'Rehearsals' tab.\
+The rehearsal page lists all the students associated with the account.\ 
 Toggle the Yes/No button under the 'Attending' column in the row of the student being added.
 
 ## Contributing
