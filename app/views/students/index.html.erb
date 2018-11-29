@@ -1,4 +1,3 @@
-<%= javascript_include_tag 'application', params[:controller], 'data-turbolinks-track': 'reload' %>
 <table class="table table-hover">
   <thead>
     <tr>
@@ -15,10 +14,5 @@
   </thead>
   <tbody>
     <%= render(:partial => 'student', :collection => @students) || 'No records' %>
-    <tr id="tr-load-more">
-      <td>
-        <%= link_to "Load More", more_students_path(:json), id: "load-more", class: "btn btn-sm btn-primary" %>
-      </td>
-    </tr>
   </tbody>
 </table>

@@ -33,7 +33,6 @@ class RehearsalsController < ApplicationController
   
   def show
     @students = current_user.students
-    @rehearsal.comments.build
   end
   
   def edit

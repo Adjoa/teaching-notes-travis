@@ -2,12 +2,7 @@ class StudentsController < ApplicationController
   before_action :set_student, only: [:show, :edit, :update, :destroy]
   
   def index
-    @students = current_user.students.first
-  end
-  
-  def more
-    @students = current_user.students.where('id > ?', params[:id]).limit(2)
-    render json: @students
+    @students = current_user.students
   end
   
   def show
@@ -21,10 +16,7 @@ class StudentsController < ApplicationController
   def create
     @student = current_user.students.build(student_params)
     if @student.save 
-      # respond_to do |format|
-        # format.html { render 'show.html', :layout => false }
-      # end
-      render json: @student
+      redirect_to student_path(@student)
     else
       render :new
     end
