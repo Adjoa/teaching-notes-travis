@@ -63,7 +63,7 @@ This action will take you to the rehearsal page.
 Select the 'Rehearsals' tab.\
 Select a rehearsal from the list by clicking the associated event's name.\
 Note: This list is also accessible from a student's page by clicking 'Add New Rehearsal' under the 'Rehearsals' tab.\
-The rehearsal page lists all the students associated with the account.\ 
+The rehearsal page lists all the students associated with the account.\\
 Toggle the Yes/No button under the 'Attending' column in the row of the student being added.
 
 ## Contributing
@@ -77,4 +77,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/Adjoa/
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
