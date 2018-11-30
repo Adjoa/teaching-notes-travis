@@ -65,6 +65,7 @@ group :test do
   gem 'rake', '~> 12.3', '>= 12.3.1'
   gem 'database_cleaner'
   gem 'factory_bot_rails'
+  gem 'ffaker', '~> 2.2'
 end 
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
