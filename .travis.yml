@@ -6,3 +6,4 @@ rvm:
 script:
 - bundle exec rake db:migrate && bundle exec rake db:seed
 - bundle exec rake spec:features
+- bundle exec rspec -fd
